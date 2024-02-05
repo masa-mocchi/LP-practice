@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="LP練習" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+    <link rel="icon" href="./img/nikukyuu.ico">
+    <title>LP練習</title>
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <h1 class="site-title">
+            <a href="#">まさもっち</a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li><!-- blankで新規タブ -->
+                <li><a href="https://www.twitter.com" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                       <img src="./img/twitter.png" alt="twitter" class="icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main -->
+    <div id="main">
+        <picture>
+            <source media="(max-width: 600px)" srcset="./img/maintop.jpg" />
+            <img src="./img/maintop.jpg" alt="">
+        </picture>
+    </div>
+
+    <!-- about -->
+    <section id="about" class="wrapper">
+        <h2 class="sec-title">About</h2>
+        <ul>
+            <li>プロフィール</li>
+            <li>趣味・特技 ギター、ネットサーフィン、ゲーム、散歩、カメラ</li>
+            <li>好きな食べ物 うどん、カレー、たこ焼き、ラーメン、ピザ、肉、寿司</li>
+            <li>行きたい場所 秋葉原 綺麗な海 紅葉の山 温泉宿</li>
+            <li>新しく習慣にしたいこと 筋トレ</li>
+            <li>mailxxx@xxx.xxx</li>
+            <li>Tel xxxx-xxxx-xxxx</li>
+        </ul>
+        <p>
+            今出来そうなことで選ぶのではなく、なりたい自分
+            <br>
+            やりたいことに向けて挑戦したい。
+            <br>
+        </p>
+    </section>
+
+    <!-- works -->
+    <section id="works" class="wrapper">
+        <h2 class="sec-title">Works</h2>
+        <ul>
+            <li><img src="./img/works1.jpg" alt="works1" />
+            <li><img src="./img/works2.jpg" alt="works2" />
+            <li><img src="./img/works3.jpg" alt="works3" />
+            <li><img src="./img/works4.jpg" alt="works4" />
+            <li><img src="./img/works5.jpg" alt="works5" />
+            <li><img src="./img/works6.jpg" alt="works6" />
+            <li><img src="./img/works7.jpg" alt="works7" />
+            <li><img src="./img/works8.jpg" alt="works8" />
+            <li><img src="./img/works9.jpg" alt="works9" />
+            </li>
+        </ul>
+    </section>
+
+    <!-- news -->
+    <section id="news" class="wrapper">
+        <h2 class="sec-title">News</h2>
+        <dl> <!-- デスクリプションライン 説明をつける -->
+            <dt>2024/01/26</dt>
+            <dd>株式会社1のWeb面接を受けました</dd>
+            <dt>2024/01/30</dt>
+            <dd>株式会社2のWeb面接を受けました</dd>
+            <dt>2024/02/04</dt>
+            <dd>本サイトを制作しました</dd>
+
+        </dl>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="wrapper">
+        <h2 class="sec-title">Contact</h2>
+        <p>お問い合わせは以下のフォームから</p>
+        <form action="#" method="post">
+            <dl>
+                <dt><label for="name">お名前</label></dt>
+                <dd><input type="text" id="name"></dd>
+                <dt><label for="email">メールアドレス</label></dt>
+                <dd><input type="email" id="email"></dd> <!-- <input type="email">で@がないと除外の機能がある(ブラウザじょうのみのチェック) -->
+                <dt><label for="content">内容</label></dt>
+                <dd><textarea id="content" cols="30" rows="10"></textarea></dd>   
+            </dl>
+            <div class="button"><input type="submit" value="送信"></div>
+        </form>
+    </section>
+
+</body>
+</html>
